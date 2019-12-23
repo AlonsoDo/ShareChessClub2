@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta name="description" content="Share Chess Room using audio, video along with text chat and filesharing with RTCMultiConnection v3.0 lib" />
     <meta name="keywords" content="Chess,Lesson,OnLine,by Internet,Virtual,Web,Video,Chat,Audio,File,Share,Board" />
-    <title>ShareChessClub v0.7.9 beta</title>
+    <title>ShareChessClub v0.8.0 beta</title>
     <link rel="stylesheet" href="res/css/style.css">
     
     <style media="screen" type="text/css">/*<![CDATA[*/@import 'res/css/stylesheet.css';/*]]>*/</style>
@@ -39,13 +39,13 @@
     <div id="divconnect" style="background-color:#e8e8e8; border:3px white solid; width:1100px; height:48px; margin:0 auto 0 auto;">
         <label for="name" style="color:green; margin-top:16px; float:left; margin-left:20px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:20px">Room Name:</label>
 	<input type="text" id="room-id" value="abcdef" name="idoftheroom" maxlength="50"             
-            style="float:left; margin-left:4px; margin-top:6px; width:240px; color:#800080; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:25px"
+            style="float:left; margin-left:4px; margin-top:6px; width:198px; color:#800080; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:25px"
         >        
         <button style="width:160px; float:left; margin-top:6px; margin-left:14px; font-family:Arial,Helvetica,sans-serif; font-weight:bold;" id="join-room" title="Open the connection and active webcam and sound" type="button"><span style="float:left; font-size:24px; margin-left:10px;" class="ui-icon ui-icon-contact">icon</span>Connect</button>
         <button style="width:160px; float:left; margin-top:6px; margin-left:14px; font-family:Arial,Helvetica,sans-serif; font-weight:bold;" id="disc-room" title="Close the connection, deactive webcam and sound" type="button"><span style="float:left; font-size:24px; margin-left:10px;" class="ui-icon ui-icon-link-broken">icon</span>Disconnect</button>
         <label for="name2" style="color:green; float:left; margin-left:14px; margin-top:16px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:20px">Name or Nick:</label>
 	<input type="text" id="nick-id" value="" name="idofthenick" maxlength="50" placeholder="Your nick here!"            
-            style="float:left; color:#800080; margin-top:6px; margin-left:4px; width:200px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:25px"
+            style="float:left; color:#800080; margin-top:6px; margin-left:4px; width:198px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:25px"
         >        
         <!--<button id="playzone" style="width:168px; float:left; margin-top:6px; margin-right:20px; float:right; font-family:Arial,Helvetica,sans-serif; font-weight:bold;" type="button" title="Go to kaspichess.com club"><span style="float:left; font-size:24px; margin-left:8px;" class="ui-icon ui-icon-grid">icon</span>KaspiChess</button>-->
 		<label id="cargandoconexion" for="name3" style="color:green; margin-top:16px; float:left; margin-left:20px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:20px">Loading...</label>
@@ -90,7 +90,6 @@
         <div id="videos-container" style="overflow-x:hidden; overflow-y:scroll; float:left; margin-left:4px; background-color:#e8e8e8; border:3px white solid; width:219px; height:632px;">
         </div>
     </div>    
-    
     <div style=" background-color:#e8e8e8; border:3px white solid; width:1100px; height:280px; margin: 4px auto 0 auto;">        
         <div style="float:left; background-color:#e8e8e8; border:3px white solid; width:1060px; height:50px; margin-left:17px; margin-top:17px;">
             <label style="color:green; float:left; margin-left:25px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">Analyzer: Stockfish Engine</label>
@@ -136,12 +135,13 @@
     
     <div style=" background-color:#e8e8e8; border:3px white solid; width:1100px; height:50px; margin: 4px auto 0 auto;">       
         <button id="share-file" style="float:left; width:132px; height:35px; margin-left:25px; margin-top:8px; padding-top:4px; font-family:Arial,Helvetica,sans-serif; font-weight:bold;" type="button" title="Share files between connections"><span style="float:left; font-size:24px;" class="ui-icon ui-icon-transferthick-e-w">icon</span>Share file</button>
-        <label style="color:green; float:left; margin-left:120px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">ShareChessClub version 0.7.8 beta by ApoloSoft (c) 2019 Contact: alonso.caspi@gmail.com</label>
+        <label style="color:green; float:left; margin-left:120px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">ShareChessClub version 0.8.0 beta by ApoloSoft (c) 2020 Contact: alonso.caspi@gmail.com</label>
     </div>
     
-    <div style="background-color:#e8e8e8; border:3px white solid; width:1100px; height:270px; margin: 4px auto 0 auto;">
+    <div style="background-color:#e8e8e8; border:3px white solid; width:1100px; height:350px; margin: 4px auto 0 auto;">
+        <img src="res/img/flag-united-kingdom2x.png" style="float:left;">
         <label style="color:green; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">Instructions: </label>
-        <label style="color:red; float:left; margin-left:10px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">1. To share the same space, the code or name of the room must be the same for all participants. You can choose one easier to remember.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">1. To share the same space, the code or name of the room must be the same for all participants. You can choose one easier to remember.</label>
         <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">2. Click on the red and green moves to go to the current position.</label>
         <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">3. You need a webcam, microphone and sound.</label>
         <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">4. In case of disconnection it is advisable to reload the page in the browser.</label>
@@ -149,9 +149,23 @@
         <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">6. Due to the constant changes while developing the application, it is possible that data from old positions can not be loaded due to incompatibility in the format.</label>
         <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">7. Using a high calculation depth with the analysis engine causes slowness in the web application.</label>
         <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">8. You must stop the analysis engine to receive new movements.</label>
-        
-        
-    </div>    
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">9. Due to possible problems when making connections it is advisable to use support tools such as Messenger, WhatsApp, Skype, etc ....</label>
+    </div>
+    
+    <div style="background-color:#e8e8e8; border:3px white solid; width:1100px; height:420px; margin: 4px auto 0 auto;">
+        <img src="res/img/flag-spain2x.png" style="float:left;">
+        <label style="color:green; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">Instruciones: </label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">1. Para compartir el mismo espacio, el codigo del Room Name debe ser el mismo para todos los participantes. Puedes elegir uno mas facil para recordarlo.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">2. Hacer Click en los movimientos verdes y rojos para ir a la actual posicion.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">3. Se necesita camara web, microfono y sonido para establecer una conexion.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">4. En caso de desconexion es aconsejable recargar la pagina en el navegador.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">5. Se puede hacer un test local abriendo dos pestañas en el navegador utilizando el mismo Room Name.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">6. Debido a los constantes cambios en la aplicacion, es posible que datos de otras sesiones salvadas con el boton Save no sean compatibles entre si en el formato particular de ShareChessClub.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">7. Usar una profundidad grande en el motor de analisis puede causar que la aplicacion se rentilice y que la conexion se corte.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">8. Se debe parar el motor the analisis para recibir nuevos movimientos.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">9. Por posibles problemas haciendo las conexiones es muy recomendable utilizar heramientas externas en modo de ayuda tales como Messenger, WhatsApp, Skype, etc ....</label>
+    </div>
+
     <div style="background-color:#e8e8e8; border:3px white solid; width:1100px; height:30px; margin: 4px auto 0 auto;">
         <label style="color:green; float:left; margin-left:20px; margin-top:7px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">Share File Container</label>
     </div>
@@ -340,8 +354,10 @@
         };
         
 		$('#cargandoconexion').hide();
-		$('#cargarloader').hide();
-
+        $('#cargarloader').hide();
+        
+        //$('#cargandoconexion').show();
+		//$('#cargarloader').show();
 
         $('#BtnStop').hide();
         $('#ImgLoader').hide();
@@ -612,7 +628,7 @@
         
         document.getElementById('join-room').onclick = function(){                        
             
-            $('#join-room').prop('disabled', true);
+            //$('#join-room').prop('disabled', true);
 			
 			if ($('#nick-id').val()==''){
                 $('#nick-id').val('anonymous');    
@@ -660,7 +676,7 @@
             }
             $('#disc-room').hide();
             $('#join-room').show();
-			$('#join-room').prop('disabled', false);
+			//$('#join-room').prop('disabled', false);
             var cNickName = $('#nick-id').val();
             $('#DivTextChat').append('<span style="color:red; font-size:15px; font-family:Arial,Helvetica,sans-serif; font-weight:bold">'+ 
                             cNickName + ': ' + '</span>' + 
