@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta name="description" content="Share Chess Room using audio, video along with text chat and filesharing with RTCMultiConnection v3.0 lib" />
     <meta name="keywords" content="Chess,Lesson,OnLine,by Internet,Virtual,Web,Video,Chat,Audio,File,Share,Board" />
-    <title>ShareChessClub v0.8.0 beta</title>
+    <title>ShareChessClub v0.8.1 beta</title>
     <link rel="stylesheet" href="res/css/style.css">
     
     <style media="screen" type="text/css">/*<![CDATA[*/@import 'res/css/stylesheet.css';/*]]>*/</style>
@@ -135,7 +135,14 @@
     
     <div style=" background-color:#e8e8e8; border:3px white solid; width:1100px; height:50px; margin: 4px auto 0 auto;">       
         <button id="share-file" style="float:left; width:132px; height:35px; margin-left:25px; margin-top:8px; padding-top:4px; font-family:Arial,Helvetica,sans-serif; font-weight:bold;" type="button" title="Share files between connections"><span style="float:left; font-size:24px;" class="ui-icon ui-icon-transferthick-e-w">icon</span>Share file</button>
-        <label style="color:green; float:left; margin-left:120px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">ShareChessClub version 0.8.0 beta by ApoloSoft (c) 2020 Contact: alonso.caspi@gmail.com</label>
+        <label style="color:green; float:left; margin-left:120px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">ShareChessClub version 0.8.1 beta by ApoloSoft (c) 2020 Contact: alonso.caspi@gmail.com</label>
+    </div>
+
+    <div style="background-color:#e8e8e8; border:3px white solid; width:1100px; height:30px; margin: 4px auto 0 auto;">
+        <label style="color:green; float:left; margin-left:20px; margin-top:7px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">Share File Container</label>
+    </div>
+    
+    <div id="file-container" style="width:1100px; height:40px; margin:0 auto 0 auto;">        
     </div>
     
     <div style="background-color:#e8e8e8; border:3px white solid; width:1100px; height:350px; margin: 4px auto 0 auto;">
@@ -166,12 +173,33 @@
         <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">9. Por posibles problemas haciendo las conexiones es muy recomendable utilizar heramientas externas en modo de ayuda tales como Messenger, WhatsApp, Skype, etc ....</label>
     </div>
 
-    <div style="background-color:#e8e8e8; border:3px white solid; width:1100px; height:30px; margin: 4px auto 0 auto;">
-        <label style="color:green; float:left; margin-left:20px; margin-top:7px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">Share File Container</label>
+    <div style="background-color:#e8e8e8; border:3px white solid; width:1100px; height:420px; margin: 4px auto 0 auto;">
+        <img src="res/img/flag-france2x.png" style="float:left;">
+        <label style="color:green; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">Instructions: </label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">1. Pour partager le même espace, le code du nom de la salle doit être le même pour tous les participants. Vous pouvez en choisir un plus facile à retenir.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">2. Cliquez sur les mouvements verts et rouges pour aller à la position actuelle.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">3. Vous avez besoin d'une webcam, d'un microphone et d'un son pour établir une connexion.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">4. En cas de déconnexion il est conseillé de recharger la page dans le navigateur.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">5. Un test local peut être effectué en ouvrant deux onglets dans le navigateur en utilisant le même Room Name.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">6. En raison des changements constants dans l'application, les données d'autres sessions enregistrées avec le bouton Enregistrer peuvent ne pas être compatibles entre elles dans le format ShareChessClub particulier.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">7. L'utilisation d'une grande profondeur dans le moteur d'analyse peut entraîner la réutilisation de l'application et la coupure de la connexion.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">8. Le moteur d'analyse doit être arrêté pour recevoir de nouveaux mouvements.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">9. Pour d'éventuels problèmes de connexion, il est fortement recommandé d'utiliser des outils externes en mode d'aide tels que Messenger, WhatsApp, Skype, etc.</label>
     </div>
-    
-    <div id="file-container" style="width:1100px; height:40px; margin:0 auto 0 auto;">        
-    </div>
+
+    <div style="background-color:#e8e8e8; border:3px white solid; width:1100px; height:420px; margin: 4px auto 0 auto;">
+        <img src="res/img/flag-germany2x.png" style="float:left;">
+        <label style="color:green; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">Anleitung: </label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">1. Um den gleichen Raum zu teilen, muss der Code für den Room Name für alle Teilnehmer gleich sein. Sie können eine leichtere auswählen, an die Sie sich erinnern können.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">2. Klicken Sie auf die grünen und roten Bewegungen, um zur aktuellen Position zu gelangen.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">3. Sie benötigen eine Webcam, ein Mikrofon und einen Sound, um eine Verbindung herzustellen.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">4. Im Falle einer Trennung ist es ratsam, die Seite im Browser neu zu laden.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">5. Ein lokaler Test kann durchgeführt werden, indem zwei Registerkarten im Browser mit demselben Room Name geöffnet werden.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">6. Aufgrund der ständigen Änderungen in der Anwendung sind Daten aus anderen Sitzungen, die mit der Schaltfläche Speichern gespeichert wurden, möglicherweise nicht mit dem jeweiligen ShareChessClub-Format kompatibel.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">7. Die Verwendung einer großen Tiefe in der Analyse-Engine kann dazu führen, dass die Anwendung erneut verwendet und die Verbindung unterbrochen wird.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">8. Die Analyse-Engine muss angehalten werden, um neue Bewegungen zu erhalten.</label>
+        <label style="color:red; float:left; margin-left:20px; margin-top:18px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; font-size:15px">9. Bei möglichen Verbindungsproblemen wird dringend empfohlen, im Hilfemodus externe Tools wie Messenger, WhatsApp, Skype usw. zu verwenden.</label>
+    </div>   
     
     <div id="dialog-promo" title="Promotion">
         <p></p>
